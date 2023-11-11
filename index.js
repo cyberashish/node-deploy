@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 const path = require('path');
 const server = express(); 
 const cors = require('cors');
-const {router} = require('./Routes/Product');
-const {userRouter} = require('./Routes/User');
+const {router} = require('/Routes/Product');
+const {userRouter} = require('/Routes/User');
 
 // db connection
 main().catch(err => console.log(err));

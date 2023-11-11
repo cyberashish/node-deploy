@@ -21,7 +21,7 @@ async function main() {
 // body parser
 server.use(cors());
 server.use(express.json());
-// server.use(express.static(path.resolve(__dirname,process.env.PUBLIC_DIR)));
+server.use(express.static(path.resolve(__dirname,process.env.PUBLIC_DIR)));
 server.use('/users' , userRouter);
 server.use('/products' , router);
 
